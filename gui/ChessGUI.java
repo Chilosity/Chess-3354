@@ -85,7 +85,7 @@ public class ChessGUI {
                 int clickedCol = getColFromSquare(labelSelected);
 
                 Piece clickedPiece = board.getPiece(clickedRow, clickedCol);
-              
+              if (clickedPiece != null){
                 if ((turn && clickedPiece.getColor() == 'w') || (turn && clickedPiece.getColor() == 'b')){
                 labelSelected = clickedSquare;
                 panelSelected = clickedPanel;
@@ -97,6 +97,7 @@ public class ChessGUI {
                 JOptionPane.showMessageDialog(null,  "Not your turn >:( ");
               }
             }
+        }
         } else {
             // Convert square positions to row and column indices
             int sourceCol = getColFromSquare(labelSelected);

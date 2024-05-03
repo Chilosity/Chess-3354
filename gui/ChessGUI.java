@@ -81,7 +81,7 @@ public class ChessGUI {
         if (panelSelected == null) {
             // Select the piece if there's no currently selected piece and the clicked square is not empty
             if (!clickedSquare.getText().isEmpty()) {
-                Piece clickedPiece = getPieceFromSquare(clickedSquare);
+                Piece clickedPiece = getPiece(clickedSquare);
 
                 if ((turn && clickedPiece.getColor() == 'w') || (turn && clickedPiece.getColor() == 'b')){
                 labelSelected = clickedSquare;
@@ -91,7 +91,7 @@ public class ChessGUI {
                 highlightLegalMoves(labelSelected); // Highlight legal moves for the selected piece
                 }
               else {
-                OptionPane.showMessageDialog(null,  "Not your turn >:( ");
+                JOptionPane.showMessageDialog(null,  "Not your turn >:( ");
               }
             }
         } else {

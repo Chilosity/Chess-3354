@@ -3,9 +3,9 @@ import java.util.Scanner;
 
 // Import custom classes for the game components
 import Pieces.*;
-import player.Player;
-import board.Board;
-import gui.ChessGUI;
+import Player;
+import Board;
+import ChessGUI;
 
 // Define the public class Game
 public class Game

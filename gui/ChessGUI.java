@@ -91,7 +91,7 @@ public class ChessGUI {
                 highlightLegalMoves(labelSelected); // Highlight legal moves for the selected piece
                 }
               else {
-                JOptionPane.showMessageDiaolog(null, "It's not your turn >:(");
+                OptionPane.showMessageDialog(null,  "Not your turn >:( ");
               }
             }
         } else {

@@ -81,8 +81,8 @@ public class ChessGUI {
         if (panelSelected == null) {
             // Select the piece if there's no currently selected piece and the clicked square is not empty
             if (!clickedSquare.getText().isEmpty()) {
-                int clickedRow = getColFromSquare(clickedSquare);
-                int clickedCol = getColFromSquare(clickedSquare);
+                int clickedRow = getColFromSquare(labelSelected);
+                int clickedCol = getColFromSquare(labelSelected);
 
                 Piece clickedPiece = board.getPiece(clickedRow, clickedCol);
               

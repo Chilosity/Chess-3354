@@ -81,23 +81,12 @@ public class ChessGUI {
         if (panelSelected == null) {
             // Select the piece if there's no currently selected piece and the clicked square is not empty
             if (!clickedSquare.getText().isEmpty()) {
-                int clickedRow = getColFromSquare(clickedSquare);
-                int clickedCol = getColFromSquare(clickedSquare);
-
-                Piece clickedPiece = board.getPiece(clickedRow, clickedCol);
-              if (clickedPiece != null){
-                if ((turn && clickedPiece.getColor() == 'w') || (turn && clickedPiece.getColor() == 'b')){
                 labelSelected = clickedSquare;
                 panelSelected = clickedPanel;
                 panelSelected.setBorder(BorderFactory.createLineBorder(Color.RED));  // Highlight the selected panel
               
-                highlightLegalMoves(labelSelected); // Highlight legal moves for the selected piece
-                }
-              else {
-                JOptionPane.showMessageDialog(null,  "Not your turn >:( ");
-              }
+              highlightLegalMoves(labelSelected); // Highlight legal moves for the selected piece
             }
-        }
         } else {
             // Convert square positions to row and column indices
             int sourceCol = getColFromSquare(labelSelected);

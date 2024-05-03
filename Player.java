@@ -2,7 +2,7 @@
 package player;
 
 // Import necessary classes
-import Board.;
+import board.Board;
 import Pieces.*;
 import java.util.ArrayList;
 import java.util.List;

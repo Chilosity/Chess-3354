@@ -6,7 +6,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import Board.;
+import board.Board;
 import Pieces.*;
 
 // Define the public class ChessGUI to handle the graphical user interface of the chess game
@@ -80,7 +80,7 @@ public class ChessGUI {
     private void handleMouseClick(JLabel clickedSquare, JPanel clickedPanel) {
         if (panelSelected == null) {
             // Select the piece if there's no currently selected piece and the clicked square is not empty
-            if (!clickedSquare.getText().isEmpty() && turn) {
+            if (!clickedSquare.getText().isEmpty()) {
                 labelSelected = clickedSquare;
                 panelSelected = clickedPanel;
                 panelSelected.setBorder(BorderFactory.createLineBorder(Color.RED));  // Highlight the selected panel

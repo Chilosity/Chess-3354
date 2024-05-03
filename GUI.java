@@ -6,7 +6,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import Board;
+import Board.;
 import Pieces.*;
 
 // Define the public class ChessGUI to handle the graphical user interface of the chess game
